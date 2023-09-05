@@ -2,18 +2,20 @@ package msm;
 
 public class MSMMensseger {
     public void enviarMensagem(){
+        validarConectadoInternet();
         System.out.println("Enviando Mensagem");
     }
 
     public void receberMensagem(){
+        salvarHistoricoMensagem();
         System.out.println("Recebendo Mensagem");
     }
 
-    public void validarConectadoInternet(){
+    private void validarConectadoInternet(){
         System.out.println("Validando se está conectado a internet");
     }
 
-    public void salvarHistoricoMensagem(){
+    private void salvarHistoricoMensagem(){
         System.out.println("Salvando o histórico da mensagem");
     }
 }
